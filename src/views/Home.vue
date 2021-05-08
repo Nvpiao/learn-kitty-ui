@@ -41,6 +41,7 @@
 
     .aside {
       height: 100%;
+      overflow: hidden;
 
       &.aside-collapse-width {
         width: 65px;

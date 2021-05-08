@@ -19,6 +19,7 @@
 
 <style lang="scss" scoped>
   .breadcrumb {
-    margin: 10px;
-  }
+      //margin: 10px 0 10px 10px;
+      padding: 10px 0 10px 10px;
+    }
 </style>

@@ -7,12 +7,14 @@
       <img :src="this.logo" alt=""/>
       <div> {{ collapse ? '' : appName }}</div>
     </div>
-    <!--  导航菜单  -->
-    <el-menu ref="nav-menu"  :class="collapse ? 'menu-bar-collapse-width': 'menu-bar-width'"
-             :collapse="collapse" :collapse-transition="false" :unique-oppend="true"
-             @open="handleOpen" @close="handleClose" @select="handleSelect">
-      <menu-tree v-for="item in navTree" :key="item.menuId" :menu="item"></menu-tree>
-    </el-menu>
+    <el-scrollbar style="width: 100%; height: 100%">
+      <!--  导航菜单  -->
+      <el-menu ref="nav-menu" class="nav-menu" :class="collapse ? 'menu-bar-collapse-width': 'menu-bar-width'"
+               :collapse="collapse" :collapse-transition="false" :unique-oppend="true"
+               @open="handleOpen" @close="handleClose" @select="handleSelect">
+        <menu-tree v-for="item in navTree" :key="item.menuId" :menu="item"></menu-tree>
+      </el-menu>
+    </el-scrollbar>
   </div>
 </template>
 
@@ -60,6 +62,7 @@
 <style lang="scss" scoped>
   .menu-bar-container {
     text-align: left;
+    height: 100%;
 
     .logo {
       height: 60px;
@@ -73,6 +76,10 @@
         margin: 10px 10px 10px 10px;
         height: 40px;
       }
+    }
+
+    .nav-menu {
+      height: calc(100% - 60px);
     }
   }
 </style>

@@ -36,7 +36,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 100%;
+    height: calc(100% - 34px);
 
     .frame {
       width: 100%;
