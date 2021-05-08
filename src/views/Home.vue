@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <el-container>
+    <el-container class="container">
       <el-aside width="auto !important;" class="aside"
                 :class="$store.state.app.collapse ? 'aside-collapse-width': 'aside-width'">
         <!-- 导航菜单栏 -->
@@ -53,6 +53,10 @@
 
     .main, .header {
       padding: 0;
+    }
+
+    .main {
+      height: 100%;
     }
   }
 </style>
