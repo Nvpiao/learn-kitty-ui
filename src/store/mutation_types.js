@@ -1,0 +1,5 @@
+export const COLLAPSE = 'collapse'
+export const SETNAVTREE = 'setMenuTree'
+export const MENUROUTELOADED = 'menuRouteLoaded'
+export const SETPARAMS = 'setPerms'
+export const SETIFRAMEURL = 'setIframeUrl'

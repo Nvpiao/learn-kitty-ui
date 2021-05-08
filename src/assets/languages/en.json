@@ -1,0 +1,26 @@
+{
+  "common": {
+    "home": "Home",
+    "main": "Main",
+    "login": "Login",
+    "exit": "Exit",
+    "notFound": "Not Found",
+    "doc": "Document",
+    "msgCenter": "Message Center",
+    "myMsg": "My Message",
+    "config": "My Config",
+    "logout": "Logout"
+  },
+  "sys": {
+    "sysIntro": "System Intro",
+    "userMng": "User Manage",
+    "deptMng": "Dept Manage",
+    "roleMng": "Role Manage",
+    "menuMng": "Menu Manage",
+    "logMng": "Log Manage",
+    "sysMonitor": "System Monitor",
+    "nav3": "Navigation 3",
+    "nav4": "Navigation 4",
+    "sysMng": "System Manage"
+  }
+}
